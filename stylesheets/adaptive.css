@@ -1,0 +1,299 @@
+@media only screen and (max-width: 768px) {
+  .spinner img {
+    width: 72vw;
+  }
+  .load_title {
+    margin-top: 2vw;
+    font-size: 6vw;
+  }
+  .moon__background{
+    height: 100vh; 
+    width: auto; 
+  }
+  .moon{
+    margin: 15vw 0 15vw 0;
+  }
+  .moon img{
+    width: 75vw;
+  }
+  .map-title{
+    font-size: 3.2vw;
+  }
+  .map img {
+    width: 90%;
+  }
+  .title  {
+    font-size: 5.7vw;
+    font-family: AeroportBold;
+    margin-top: 6vw;
+    color: white;
+  }
+  .map-overlay-text {
+    font-size: 3.1vw;
+  }
+  .map-overlay-text.text_1 {
+    top: 16%;
+    left: 17%;
+  }
+  .map-overlay-text.text_2 {
+    bottom: 12%;
+    left: 23%;
+  }
+  .map-overlay-text.text_3 {
+    top: 44%;
+    right: 13%
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+  }
+  .slider-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  label {
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    font-family: AeroportRegular;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 7vw;
+    height: 4vw;
+    background: white;
+    border-radius: 25%;
+    transition: .1s;
+    cursor: pointer;
+  }
+  input[type="range"] {
+    margin-top: 3vw;
+    width: 90vw;
+    height: 1vw;
+  }
+  .slider-container.grayscale {
+    order: 1;
+  }
+  .slider-container.contrast {
+    order: 2;
+  }
+  .slider-container.invert {
+    order: 3;
+  }
+  .textarea{
+    display: none;
+  }
+  .textarea_mobile {
+    display: block;
+    position: relative;
+    margin-top: 5vw;
+    width: 100%;
+  }
+  .bgimage_mobile {
+    width: 100%;
+  }
+  .text {
+    position: absolute;
+    top: 48%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 5vw;
+  }
+  .text1_mobile{
+    display: block;
+  }
+  .text1_mobile img{
+    width: 82vw;
+  }
+  .description1_mobile{
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    width: 100%;
+  }
+  .description1_mobile p{
+    margin-top: 8vw;
+    line-height: 1.3;
+  }
+  .description1day_mobile{
+    position: absolute;
+    top: 26%;
+    left: 3%;
+    width: 100%;
+    color: black;
+  }
+  .description1day_mobile p{
+    margin-top: 7vw;
+    line-height: 1.3;
+    color: black;
+  }
+  .text2_mobile{
+    display: none;
+  }
+  .text2_mobile img{
+    width: 82vw;
+  }
+  .description2_mobile{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 100%;
+  }
+  .description2_mobile p{
+    margin-top: 9vw;
+    line-height: 1.3;
+    font-size: 4.8vw;
+  }
+  .description2day_mobile{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 100%;
+    color: black;
+  }
+  .description2day_mobile p{
+    margin-top: 7vw;
+    line-height: 1.3;
+    color: black;
+  }
+  .description3_mobile{
+    position: absolute;
+    top: 1.5%;
+    left: 3.5%;
+    width: 100%;
+  }
+  .description3_mobile p{
+    margin-top: 9vw;
+    line-height: 1.3;
+    font-size: 4.8vw;
+  }
+  .description3day_mobile{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 100%;
+    color: black;
+  }
+  .description3day_mobile p{
+    margin-top: 7vw;
+    line-height: 1.3;
+    color: black;
+  }
+  .text3_mobile{
+    display: none;
+  }
+  .text3_mobile img{
+    width: 82vw;
+  }
+  .switches img{
+    position: absolute;
+    width: 7vw;
+    cursor: pointer;
+  }
+  .switcher1_mobile{
+    bottom: 5.6%;
+    left: 21.8%;
+    opacity: 1;
+  }
+  .switcher2_mobile{
+    bottom: 5.7%;
+    left: 44.3%;
+    opacity: 0;
+  }
+  .switcher3_mobile{
+    bottom: 6%;
+    right: 26%;
+    opacity: 0;
+  }
+  .hieroglyphs-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    padding: 10% 20% 5% 20%;
+  }
+  .hieroglyphs img,
+  .canvas-container {
+    width: 50vw;
+    height: auto;
+    max-height: 54vw;
+  }
+  .restart{
+    display: none;
+  }
+  .restart_mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 0.15vw solid white;
+    border-right: 0.15vw solid white;
+    padding: 2vw;
+  }
+  .restart_mobile img {
+    width: 8vw;
+    height: 8vw;
+  }
+  .game {
+   display: none;
+  }
+  .game_mobile{
+    display: block;
+  }
+  .field_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cups{
+    display: flex;
+    justify-content: space-between;
+    margin: 12vw 7vw 12vw 7vw;
+  }
+  .cup1_mobile, .cup2_mobile{
+    position: relative;
+  }
+  .cup1_mobile img, .cup2_mobile img {
+    width: 32vw;
+  }
+  .checkers img{
+    position: absolute;
+    width: 11vw;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .game_mobile {
+    margin-top: 8vw;
+  }
+  .gamefield{
+    width: 85vw;
+    user-select: none;
+    pointer-events: none;
+  }
+  .footer{
+    margin: 6vw 0 10vw 0;
+  }
+  .footer-columns{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 5vw 2vw 5vw;
+  }
+  .logo{
+    width: 26vw;
+  }
+  .footer h2{
+    color: white;
+    font-family: AeroportBold;
+    font-size: 5.5vw;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .moon img{
+    width: 65vw;
+  }
+}

@@ -1,0 +1,526 @@
+body {
+  background-color: black;
+  font-family: "AeroportRegular";
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.spinner {
+  display: flex;
+  justify-content: center;
+}
+.spinner img {
+  width: 36vw;
+  height: auto;
+  animation: rotate 3.5s infinite;
+}
+.load_title {
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 4vw;
+  font-family: AeroportBold;
+}
+.content {
+  display: none;
+}
+.moon__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  background-size: cover; 
+  background-image: url('../images/bg_night.png');
+}
+.moon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.moon img {
+  width: 33vw;
+  cursor: pointer;
+  -webkit-user-drag: none;
+}
+.title  {
+  font-size: 3vw;
+  font-family: AeroportBold;
+  margin-top: 4vw;
+  color: rgb(0, 0, 0);
+}
+.title h1{
+  padding: 0.5vw;
+}
+.map-title {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12vw;
+  font-size: 2vw;
+  color: white;
+  cursor: pointer;
+}
+.map-title p {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.3em;
+}
+.map-title p.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.1vw;
+  background-color: currentColor;
+}
+.map {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.map img {
+  width: 72%;
+}
+.map-overlay-text {
+  position: absolute;
+  color: white;
+  font-size: 2vw;
+  z-index: 10;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 0.04em; 
+  cursor: pointer;
+  display: none;
+}
+.map-overlay-text.text_1 {
+  top: 16%;
+  left: 24.5%;
+}
+.map-overlay-text.text_2 {
+  bottom: 13%;
+  left: 30%;
+}
+.map-overlay-text.text_3 {
+  top: 47%;
+  right: 22.5%;
+}
+.map-event {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+}
+.map-event.visible {
+  opacity: 1;
+}
+.controls{
+  margin: 2vw 0vw 4vw 0vw;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.slider-container {
+  width: 15vw;
+}
+label {
+  color: white;
+  font-family: "Aeroport";
+  font-size: 2vw;
+}
+input[type="range"]{
+  margin-top: 1.5vw;
+  appearance: none;
+  border-radius:2px;
+  width: 14vw;
+  height: 0.6vw;
+  background-color: white;
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width:3.5vw;
+  height:2vw;
+  background: white;
+  border-radius:25%;
+  transition:.1s;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-webkit-slider-thumb:active{
+  background: gray;
+}
+.slider-container.invert {
+  order: 1;
+}
+.slider-container.grayscale {
+  order: 2;
+}
+.slider-container.contrast {
+  order: 3;
+}
+#invert{
+  transform: scaleX(-1);
+}
+.textarea_mobile {
+  display: none;
+}
+.textarea {
+  position: relative;
+  width: 100%;
+  margin-top: 5vw;
+  scroll-margin-top: -2.5vw;
+}
+.bgimage {
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+.switches img{
+  position: absolute;
+  width: 4vw;
+  cursor: pointer;
+}
+.switcher1{
+  top: 26%;
+  right: 5.9%;
+  opacity: 1;
+}
+.switcher2{
+  top: 48.8%;
+  right: 5.5%;
+  opacity: 0;
+}
+.switcher3{
+  top: 71.3%;
+  right: 5.25%;
+  opacity: 0;
+}
+.text {
+  position: absolute;
+  top: 49%;
+  left: 8%;
+  text-align: left;
+  transform: translateY(-50%);
+  font-size: 2vw;
+  color: white;
+}
+.text h2{
+  font-family: 'AeroportBold';
+}
+.description1{
+  position: absolute;
+  top: 63%;
+  left: 3%;
+  width: 100%;
+}
+.description1 p{
+  font-size: 1.9vw;
+  margin-top: 3vw;
+  line-height: 1.2;
+}
+.description1_day{
+  position: absolute;
+  top: 53%;
+  left: 3%;
+  width: 100%;
+  color: black;
+}
+.description1_day p{
+  font-size: 1.9vw;
+  margin-top: 3.2vw;
+  line-height: 1.3;
+  color: black;
+}
+.description2{
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  width: 100%;
+}
+.description2 p{
+  font-size: 1.9vw;
+  margin-top: 4vw;
+  line-height: 1.2;
+}
+.description2_day{
+  color: black;
+  position: absolute;
+  top: 6%;
+  left: 2%;
+  width: 100%;
+}
+.description2_day p{
+  color: black;
+  font-size: 1.9vw;
+  margin-top: 3vw;
+  line-height: 1.3;
+}
+.description3{
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  width: 100%;
+}
+.description3 p{
+  font-size: 1.9vw;
+  margin-top: 3vw;
+  line-height: 1.2;
+}
+.description3_day{
+  color: black;
+  position: absolute;
+  top: 8%;
+  left: 14%;
+  width: 80%;
+}
+.description3_day p{
+  color: black;
+  font-size: 1.9vw;
+  margin-top: 3vw;
+  line-height: 1.3;
+}
+.text1{
+  display: block;
+}
+.text1 img{
+  width: 75vw;
+  pointer-events: none;
+}
+.text2{
+  display: none;
+}
+.text2 img{
+  width: 75vw;
+}
+.text3{
+  display: none;
+}
+.text3 img{
+  width: 75vw;
+}
+.master-class{
+  margin-top: 5vw;
+}
+.mc-title{
+  display: flex;
+  justify-content: center;
+  font-size: 5vw;
+  color: white;
+}
+.hieroglyphs {
+  margin-top: 5vw;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+.hieroglyphs-border{
+  border: 0.15vw solid white;
+  padding: 4vw;
+  position: relative;
+}
+.hieroglyphs img {
+  width: 40vw;
+  height: 36vw;
+  object-fit: cover; 
+  user-select: none;
+  pointer-events: none;
+}
+.restart_mobile{
+  display: none;
+}
+.restart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 0.15vw solid white;
+  border-left: 0.15vw solid white;
+  padding: 1vw;
+  cursor: pointer;
+  z-index: 10;
+}
+.restart img {
+  width: 4vw;
+  height: 4vw;
+}
+.canvas-container {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+#drawingCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.template-image {
+  display: block;
+  max-width: 100%;
+}
+.fieldbg {
+  width: 100%;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+.game_mobile{
+  display: none;
+}
+.game {
+  margin-top: 5vw;
+  position: relative;
+  overflow: hidden;
+}
+.field {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gamefield{
+  width: 44vw;
+  user-select: none;
+  pointer-events: none;
+}
+.cup1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5vw 0 0 5vw;
+}
+.cup2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 5vw 5vw 0;
+}
+.cup1 img, .cup2 img {
+  width: 18vw;
+}
+.checkers img{
+  position: absolute;
+  width: 6.5vw;
+  cursor: pointer;
+  z-index: 10;
+}
+.checker1{
+  top: 13%;
+  left: 15%;
+}
+.checker2{
+  top: 9%;
+  left: 33%;
+}
+.checker3{
+  top: 39%;
+  left: 13%;
+}
+.checker4{
+  top: 48%;
+  left: 23%;
+}
+.checker5{
+  top: 50%;
+  left: 39%;
+}
+.checker6{
+  top: 30%;
+  left: 32%;
+}
+.checker7{
+  top: 35%;
+  left: 53%;
+}
+.checker8{
+  top: 19%;
+  left: 53%;
+}
+.checker9{
+  top: 25%;
+  left: 7%;
+}
+.checker10{
+  top: 19%;
+  left: 14%;
+}
+.checker11{
+  top: 9%;
+  left: 34%;
+}
+.checker12{
+  top: 29%;
+  left: 24%;
+}
+.checker13{
+  top: 39%;
+  left: 40%;
+}
+.checker14{
+  top: 54%;
+  left: 38%;
+}
+.checker15{
+  top: 46%;
+  left: 15%;
+}
+.checker16{
+  top: 28%;
+  left: 58%;
+}
+.checker17{
+  top: 24%;
+  left: 42%;
+}
+.checker18{
+  top: 29%;
+  left: 12%;
+}
+.checker19{
+  top: 42%;
+  left: 53%;
+}
+.footer{
+  margin: 2vw 0 2vw 0;
+}
+.footer-columns{
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 4vw 2vw 4vw;
+}
+.logo{
+  width: 18vw;
+}
+.footer h2{
+  color: white;
+  font-family: AeroportBold;
+  font-size: 3.8vw;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+

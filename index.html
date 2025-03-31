@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="icon" href="images/icon.svg">
+  <title>Лекторий</title>
+</head>
+<body>
+  <section class="loader" id="loader">
+    <div class="loader-content">
+        <div class="spinner">
+            <img src="images/loading.png">
+        </div>
+        <div class="load_title">
+            <p>ШТРИХ ЛЕСА</p>
+        </div>
+    </div>
+</section>
+<section class="content">
+<div class="moon__background">
+  <div class="moon">
+    <audio id="themeclick" src="audio/themechange.mp3"></audio>
+    <img src="images/moon_night.png" alt="Луна">
+    <div class="title">
+      <h1>БЕЛЫМ ПО ЧЕРНОМУ</h1>
+    </div>
+  </div>
+</div>
+<div class="map-title">
+  <p id="trigger-map">Каллиграфия леса</p>
+  <p id="trigger-event">Карта мероприятия</p>
+</div>
+<div class="map">
+  <img class="map-event" src="images/MapEventBlack.png" alt="Карта мероприятия">
+  <img id="map" src="images/Map.png" alt="Каллиграфия леса">
+  <div class="map-overlay-text text_1">Послания ночи</div>
+  <div class="map-overlay-text text_2">Линии</div>
+  <div class="map-overlay-text text_3">Звуки и знаки</div>
+</div>
+<div class="controls">
+  <div class="slider-container grayscale">
+    <label for="grayscale">Ч\Б</label>
+    <input type="range" id="grayscale" min="0" max="100" value="100">
+  </div>
+  <div class="slider-container contrast">
+    <label for="contrast">Контраст</label>
+    <input type="range" id="contrast" min="100" max="200" value="200">
+  </div>
+  <div class="slider-container invert">
+    <label for="invert">Инверсия</label>
+    <input type="range" id="invert" min="0" max="100" value="0">
+  </div>
+</div>
+<div class="textarea">
+  <audio id="textareaclick" src="audio/textareabutton.mp3"></audio>
+  <img src="images/textareablack.png" class="bgimage">
+  <div class="switches">
+    <img src="images/fishka_black.png" class="switcher1">
+    <img src="images/fishka_black.png" class="switcher2">
+    <img src="images/fishka_black.png" class="switcher3">
+  </div>
+  <div class="text">
+    <div class="text1">
+      <img src="images/textarea1.svg">
+      <div class="description1">
+      <h2>Ритуал «Послания ночи»</h2>
+      <p>Личное послание миру на чёрном свитке белым пером. В тишине <br>
+        леса каждый гость может стать частью особо-го ритуала. Вы получаете <br>чёрный свиток и белое перо — и пишете то, что хотите оставить этой ночью.</p>
+    </div>
+    <div class="description1_day">
+      <h2>Библиотека</h2>
+      <p>Пространство для неспешного погружения в историю <br>
+        каллиграфии, шрифтового искусства и письменности. Здесь собраны книги,<br>
+        манускрипты и редкие издания, рассказывающие<br>
+        о мастерстве, философии письма и эволюции символов.</p>
+    </div>
+    </div>
+    <div class="text2">
+      <img src="images/textarea2.svg">
+      <div class="description2">
+        <h2>Музыкальный джем «Звуки и знаки»</h2>
+        <p> На ночной поляне собираются музыканты, чтобы <br> создать уникальный перформанс — прямо на глазах <br>
+          у гостей. </p>
+      </div>
+      <div class="description2_day">
+        <h2>Пленэр</h2>
+        <p>Творческая мастерская под открытым небом, где природа <br> 
+          становится не только фоном, но и вдохновением <br> 
+          для каллиграфии. В свете дня участники исследуют <br>
+          игру теней, движение <br>
+          ветра <br>
+          и изгибы деревьев,<br>
+          превращая их <br>
+          в плавные <br>
+          линии и <br>
+          выразительные <br>
+          штрихи.</p>
+      </div>
+    </div>
+    <div class="text3">
+      <img src="images/textarea3.svg">
+      <div class="description3">
+        <h2>Инсталляция «Линии»</h2>
+        <p>Проекция каллиграфии <br> на деревья. Ночью лес превращается в живую галерею под открытым <br> небом. 
+        Каллиграфические композиции проецируются на стволы <br> деревьев, мох и листву, рождая волшебную игру света и теней.</p>
+      </div>
+      <div class="description3_day">
+        <h2>Лекторий</h2>
+        <p>
+          Место встречи мастеров каллиграфии, исследователей шрифта <br>
+          и всех, кто хочет погрузиться в искусство букв. Здесь традиции <br> прошлого встречаются с новыми взглядами, 
+          а древние техники <br> письма оживают в современных интерпретациях. </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="textarea_mobile">
+  <audio id="textareaclick" src="audio/textareabutton.mp3"></audio>
+  <img src="images/textareablack_mobile.png" class="bgimage_mobile">
+  <div class="switches">
+    <img src="images/fishka_black.png" class="switcher1_mobile">
+    <img src="images/fishka_black.png" class="switcher2_mobile">
+    <img src="images/fishka_black.png" class="switcher3_mobile">
+  </div>
+  <div class="text">
+    <div class="text1_mobile">
+      <img src="images/textarea1_mobile.svg">
+            <div class="description1_mobile">
+        <h2>Ритуал «Послания ночи»</h2>
+        <p>Личное послание миру <br> на чёрном свитке белым пером. <br> В тишине
+          леса каждый гость <br> может стать частью особого <br> ритуала. Вы получаете чёрный <br> 
+          свиток и белое перо — и пишете <br> то, что хотите оставить этой <br> ночью.</p>
+      </div>
+      <div class="description1day_mobile">
+        <h2>Библиотека</h2>
+        <p>Пространство для неспешного <br> погружения в историю <br>
+          каллиграфии, шрифтового <br> искусства и письменности. <br> Здесь собраны книги,<br>
+          манускрипты и редкие <br> издания, рассказывающие <br>
+          о мастерстве, философии <br> письма и эволюции символов.</p>
+      </div>
+    </div>
+    <div class="text2_mobile">
+      <img src="images/textarea2_mobile.svg">
+      <div class="description2_mobile">
+        <h2>Музыкальный джем «Звуки и <br> знаки»</h2>
+        <p>На ночной поляне собираются <br> музыканты, чтобы создать <br> уникальный перформанс — прямо <br> на глазах у гостей.</p>
+      </div>
+      <div class="description2day_mobile">
+        <h2>Пленэр</h2>
+        <p>Творческая мастерская под <br> открытым небом, где природа <br>
+          становится <br> не только фоном, но и <br> вдохновением
+          для <br> каллиграфии.
+      </div>
+    </div>
+    <div class="text3_mobile">
+      <img src="images/textarea3_mobile.svg">
+      <div class="description3_mobile">
+        <h2>Инсталляция «Линии»</h2>
+        <p>Проекция каллиграфии <br> на деревья. Ночью лес <br> превращается в живую <br> галерею под открытым небом. <br> 
+        Каллиграфические композиции проецируются на стволы <br> деревьев, мох и листву, рождая <br> волшебную игру света и теней.</p>
+      </div>
+      <div class="description3day_mobile">
+         <h2>Лекторий</h2>
+        <p>
+          Место встречи мастеров <br> каллиграфии, исследователей <br> шрифта
+          и всех, кто хочет <br> погрузиться в искусство букв. <br> Здесь традиции прошлого <br> встречаются с новыми <br> взглядами, 
+          а древние техники <br> письма оживают в <br> современных интерпрета- <br> циях. </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="master-class">
+  <div class="mc-title">
+    <p>Мастер класс по каллиграфии</p>
+  </div>
+  <div class="hieroglyphs">
+    <div class="hieroglyphs-border">
+    <img src="images/draw.gif">
+    <div class="canvas-container">
+      <canvas id="drawingCanvas"></canvas>
+      <img src="images/hieroglyphs_black.png" class="template-image">
+    </div>
+    <div class="restart">
+      <img src="images/restart_black.png">
+    </div>
+    <div class="restart_mobile">
+      <img src="images/restart_black.png">
+    </div>
+  </div>
+</div>
+<div class="game">
+  <div class="cup1">
+    <img src="images/game_cup1.png">
+    <div class="checkers">
+      <img src="images/fishka_white.png" class="checker1">
+      <img src="images/fishka_white.png" class="checker6">
+      <img src="images/fishka_white.png" class="checker2">
+      <img src="images/fishka_white.png" class="checker4">
+      <img src="images/fishka_white.png" class="checker3">
+      <img src="images/fishka_white.png" class="checker5">
+      <img src="images/fishka_white.png" class="checker7">
+      <img src="images/fishka_white.png" class="checker8">
+      <img src="images/fishka_white.png" class="checker9">
+    </div>
+  </div>
+  <img src="images/game_black.png" class="fieldbg">
+  <div class="field">
+    <img src="images/field_black.svg" class="gamefield">
+  </div>
+  <div class="cup2">
+    <img src="images/game_cup2.png">
+    <div class="checkers">
+      <img src="images/fishka_black.png" class="checker10">
+      <img src="images/fishka_black.png" class="checker11">
+      <img src="images/fishka_black.png" class="checker12">
+      <img src="images/fishka_black.png" class="checker13">
+      <img src="images/fishka_black.png" class="checker15">
+      <img src="images/fishka_black.png" class="checker14">
+      <img src="images/fishka_black.png" class="checker16">
+      <img src="images/fishka_black.png" class="checker17">
+      <img src="images/fishka_black.png" class="checker18">
+      <img src="images/fishka_black.png" class="checker19">
+    </div>
+  </div>
+</div>
+<div class="game_mobile">
+  <div class="field_mobile">
+    <img src="images/field_black.svg" class="gamefield">
+  </div>
+    <div class="cups">
+      <div class="cup1_mobile">
+        <img src="images/game_cup1.png">
+        <div class="checkers">
+          <img src="images/fishka_white.png" class="checker1">
+          <img src="images/fishka_white.png" class="checker6">
+          <img src="images/fishka_white.png" class="checker2">
+          <img src="images/fishka_white.png" class="checker4">
+          <img src="images/fishka_white.png" class="checker3">
+          <img src="images/fishka_white.png" class="checker5">
+          <img src="images/fishka_white.png" class="checker7">
+          <img src="images/fishka_white.png" class="checker8">
+          <img src="images/fishka_white.png" class="checker9">
+        </div>
+      </div>
+    <div class="cup2_mobile">
+      <img src="images/game_cup2.png">
+      <div class="checkers">
+        <img src="images/fishka_black.png" class="checker10">
+        <img src="images/fishka_black.png" class="checker11">
+        <img src="images/fishka_black.png" class="checker12">
+        <img src="images/fishka_black.png" class="checker13">
+        <img src="images/fishka_black.png" class="checker15">
+        <img src="images/fishka_black.png" class="checker14">
+        <img src="images/fishka_black.png" class="checker16">
+        <img src="images/fishka_black.png" class="checker17">
+        <img src="images/fishka_black.png" class="checker18">
+        <img src="images/fishka_black.png" class="checker19">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-columns">
+    <h2 style="font-family: hakusyugyosyobold;">デザインス <br> クール</h2>
+    <h2 style="font-family: hakusyugyosyobold;">ダニロフ・ア<br>レクサンダー</h2>
+  </div>
+</div>
+</section>
+<script src="javascripts/loading.js"></script>
+<script src="javascripts/theme.js"></script>
+<script src="javascripts/map.js"></script>
+<script src="javascripts/textarea.js"></script>
+<script src="javascripts/drawing.js"></script>
+<script src="javascripts/game.js"></script>
+</body>
+</html>

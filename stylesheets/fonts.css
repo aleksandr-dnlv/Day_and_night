@@ -1,0 +1,16 @@
+@font-face {
+    src: url("../fonts/Aeroport/Aeroport-regular.ttf") format("truetype"); 
+    font-family: "AeroportRegular";
+}
+@font-face {
+    src: url("../fonts/Aeroport/Aeroport-bold.ttf") format("truetype"); 
+    font-family: "AeroportBold";
+} 
+@font-face {
+    src: url("../fonts/Aeroport/Aeroport-black.ttf") format("truetype"); 
+    font-family: "AeroportBlack";
+} 
+@font-face {
+    src: url("../fonts/hakusyugyosyo/hakusyugyosyobold.ttf") format("truetype"); 
+    font-family: "hakusyugyosyobold";
+} 
